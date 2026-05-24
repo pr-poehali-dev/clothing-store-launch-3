@@ -94,6 +94,9 @@
   .bg-ivory {
     background-color: hsl(var(--ivory));
   }
+  .text-ivory {
+    color: hsl(var(--ivory));
+  }
 
   .grain-overlay {
     position: relative;
@@ -115,17 +118,22 @@
   }
 
   .btn-primary {
-    @apply bg-charcoal text-ivory px-8 py-3 text-xs tracking-[0.25em] uppercase font-body transition-all duration-300;
+    @apply px-8 py-3 text-xs tracking-[0.25em] uppercase font-body transition-all duration-300;
+    background-color: hsl(var(--charcoal));
+    color: hsl(var(--ivory));
   }
   .btn-primary:hover {
-    @apply bg-gold text-charcoal;
+    background-color: hsl(var(--gold));
+    color: hsl(var(--charcoal));
   }
 
   .btn-outline {
     @apply border border-current px-8 py-3 text-xs tracking-[0.25em] uppercase font-body transition-all duration-300;
   }
   .btn-outline:hover {
-    @apply bg-charcoal text-ivory border-charcoal;
+    background-color: hsl(var(--charcoal));
+    color: hsl(var(--ivory));
+    border-color: hsl(var(--charcoal));
   }
 
   .section-label {
